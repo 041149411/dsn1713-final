@@ -1,0 +1,63 @@
+// Custom.scss
+// Custom changes here
+
+// import fonts here
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+// icons import
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+// body bg
+$body-bg: #ffffff;
+
+// theme colours
+$primary: #472E77;
+$secondary: #655486;
+$success: #F7F7F7;
+$info: #59C1EF;
+$warning: #FFF689;
+$danger: #E5446D;
+$light: #ffffff;
+$dark: #181853;
+
+// nav bar
+$navbar-light-color: #655486;
+$input-placeholder-color: #ffffff;
+
+// typography
+//change font family for base text + headings
+$font-family-sans-serif: "DM Sans", sans-serif;
+
+// change font family for body copy
+$font-family-serif: "Merriweather", serif;
+
+// target icon colours
+.person-icon {
+    color: $secondary;
+}
+
+.post-icon {
+    color: $secondary;
+}
+
+
+.lead {
+    font-family: $font-family-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Import all of bootstrap into custom.css
+@import "../node_modules/bootstrap/scss/bootstrap";
