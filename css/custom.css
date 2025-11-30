@@ -14,6 +14,11 @@
   font-family: "Merriweather", serif;
 }
 
+.glide__slides {
+  margin: 0;
+  padding: 0;
+}
+
 /*!
  * Bootstrap  v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
