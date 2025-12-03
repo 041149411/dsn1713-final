@@ -103,9 +103,9 @@
         <div id="g1" class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides mb-5">
-              <li class="glide__slide"><img src="images/hp-tennis.jpg" width="290" height="190"></li>
-              <li class="glide__slide"><img src="images/hp-skates.jpg" width="290" height="190"></li>
-              <li class="glide__slide"><img src="images/hp-bike-helmet.jpg" width="290" height="190"></li>
+              <li class="glide__slide"><img src="images/hp-tennis.jpg" class="img-fluid"></li>
+              <li class="glide__slide"><img src="images/hp-skates.jpg" class="img-fluid"></li>
+              <li class="glide__slide"><img src="images/hp-bike-helmet.jpg" class="img-fluid"></li>
             </ul>
           </div>
           <div class="glide__bullets mt-5" data-glide-el="controls[nav]">
@@ -126,9 +126,9 @@
         <div id="g2" class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides mb-5">
-              <li class="glide__slide"><img src="images/hp-apt.jpg" width="290" height="190"></li>
-              <li class="glide__slide"><img src="images/hp-oven.jpg" width="290" height="190"></li>
-              <li class="glide__slide"><img src="images/hp-stamps.jpg" width="290" height="190"></li>
+              <li class="glide__slide"><img src="images/hp-apt.jpg" class="img-fluid"></li>
+              <li class="glide__slide"><img src="images/hp-oven.jpg" class="img-fluid"></li>
+              <li class="glide__slide"><img src="images/hp-stamps.jpg" class="img-fluid"></li>
             </ul>
           </div>
           <div class="glide__bullets mt-5" data-glide-el="controls[nav]">
@@ -144,51 +144,38 @@
         <div class="container">
           <h2 class="mb-3 fw-bold text-primary">ACTIVE CATEGORIES</h2>
           <div class="row gy-4">
-            <div class="col-lg-4 col-lg-3">
+            <div class="col-sm">
               <div class="card text-bg-light border-0">
                 <img src="images/hp-bike.jpg" class="card-img-top rounded-0" alt="...">
-                <div class="card-body">
-                  <p class="lead fs-6">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                  <a href="#" class="btn btn-primary rounded-0 py-2 px-5">See post</a>
+                <div class="card-body d-flex flex-column">
+                  <p class="lead fs-6">Description of post here.</p>
+                  <a href="#" class="btn btn-primary rounded-0 py-2 px-3 px-md-5 mx-auto">See post</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-4 col-lg-3">
+            <div class="col-sm">
               <div class="card text-bg-light border-0">
                 <img src="images/hp-house.jpg" class="card-img-top rounded-0" alt="...">
-                <div class="card-body">
-                  <p class="lead fs-6">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                  <a href="#" class="btn btn-primary rounded-0 py-2 px-5">See post</a>
+                <div class="card-body d-flex flex-column">
+                  <p class="lead fs-6">Description of post here.</p>
+                  <a href="#" class="btn btn-primary rounded-0 py-2 px-3 px-md-5 mx-auto">See post</a>
                 </div>
               </div>
             </div>
 
-             <div class="col-lg-4 col-lg-3">
+             <div class="col-sm">
               <div class="card text-bg-light border-0">
                 <img src="images/hp-toy-trucks.jpg" class="card-img-top rounded-0" alt="...">
-                <div class="card-body">
-                  <p class="lead fs-6">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                  <a href="#" class="btn btn-primary rounded-0 py-2 px-5">See post</a>
+                <div class="card-body d-flex flex-column">
+                  <p class="lead fs-6">Description of post here.</p>
+                  <a href="#" class="btn btn-primary rounded-0 py-2 px-3 px-md-5 mx-auto">See post</a>
                 </div>
               </div>
             </div>
-          
-          
-
-
-            
-        
-
-
-
-
-          
-
           </div>
-
         </div>
-      </section>
+        </section>
 
        
       
@@ -234,30 +221,37 @@
 
   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
 
-  <script>
-          const gl1 = new Glide('#g1')
-          const gl2 = new Glide('#g2')
-
-          gl1.mount();
-          gl2.mount();
-
-        
-    </script>
-
-
-
 
   <script>
-    new Glide('.glide',{
-      type:"carousel",
-      perView: 3,
-      breakpoints: {
-        500: {
-          perView: 2
-        }
+  // g1 
+  const gl1 = new Glide('#g1', {
+    type: "carousel",
+    perView: 3,
+    breakpoints: {
+      500: { perView: 2 }
+    }
+  });
+
+  gl1.mount();
+
+  // g2
+  const gl2 = new Glide('#g2', {
+    type: "carousel",
+    perView: 3,
+    gap: 10,    
+    breakpoints: {
+      500: {
+        perView: 2,
+        gap: 10,
       }
-    }).mount()
-  </script>
+    }
+  });
+
+  gl2.mount();
+</script>
+
+
+
 
 
 
