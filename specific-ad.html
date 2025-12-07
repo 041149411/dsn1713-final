@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dsn1713-final</title>
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Glide.js stylesheets-->
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-    <!--Inserting favicon-->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dsn1713-final</title>
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Glide.js stylesheets-->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <!-- INSERTING FAVICON -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<!--NAV BAR-->
+
+<!-- NAV BAR -->
 <body class="bg-light">
   <header class="sticky-top">
     <nav class="navbar navbar-light bg-light navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="#"> 
+        <a class="navbar-brand" href="index.html"> 
           <img src="images/craigslist-logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
         </a>
         <form class="d-flex" role="search">
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">ABOUT</a>
@@ -45,7 +45,6 @@
 
   <main class="container my-5">
     <div class="row">
-  
     <!-- SIDEBAR -->
       <div class="col-md-2 col-lg-2 bg-success p-2 pb-5 d-none d-md-block">
         <h5 class="fw-bold mb-3">Categories</h5>
@@ -67,7 +66,6 @@
           <option>Kingston</option>
           <option>Barrie</option>
         </select>
-
         <div class="mb-4">
           <img src="images/calendar.png" class="img-fluid" alt="Calendar" width="200" height="40">
         </div>
@@ -76,7 +74,6 @@
         </div>
       </div>
 
-     
       <!-- SPECIFIC AD SECTION -->
       <section id="hero" class="col-md-10">
           <div class="row align-items-center">
@@ -85,7 +82,7 @@
               <img src="images/ad-camera.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
             </div>
           </div>
-
+          <!-- GLIDE SLIDER --> 
           <div id="g1" class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides mb-5">
@@ -94,43 +91,28 @@
               <li class="glide__slide"><img src="images/ad-camera-3.jpg" class="img-fluid"></li>
             </ul>
           </div>
+          <!-- SLIDER BULLETS -->
           <div class="glide__bullets mt-5" data-glide-el="controls[nav]">
             <button class="glide__bullet bg-secondary" data-glide-dir="=0"></button>
             <button class="glide__bullet bg-secondary" data-glide-dir="=1"></button>
             <button class="glide__bullet bg-secondary" data-glide-dir="=2"></button>
           </div>
         </div>
-
-
         <h1 class="mb-2 fw-bold text-primary">Item Description</h1>
-        <p class="lead fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet magna a augue malesuada ultrices. Suspendisse potenti. Donec ut dictum magna, vitae dictum metus. Quisque rhoncus, massa vel porta porta, sem urna interdum est,.et sagittis purus justo sed justo. Integer nec ante vel ligula cursus gravida. Nulla euismod luctus purus, vel porttitor erat tincidunt nec. Phasellus condimentum nulla et sem dignissim, vel vulputate magna bibendum. Sed pretium odio at erat feugia.</p>
-         <div class="d-flex flex-column flex-md-row gap-3">
-            <button type="button" style="padding: 10px 50px;" class="btn btn-primary btn-lg me-md-2 rounded-0 mx-auto">Reply</button>
-            <button type="button" style="padding: 10px 50px;" class="btn btn-primary btn-lg me-md-2 rounded-0 mx-auto">Share</button>
+        <p class="lead fs-6 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet magna a augue malesuada ultrices. Suspendisse potenti. Donec ut dictum magna, vitae dictum metus. Quisque rhoncus, massa vel porta porta, sem urna interdum est,.et sagittis purus justo sed justo. Integer nec ante vel ligula cursus gravida. Nulla euismod luctus purus, vel porttitor erat tincidunt nec. Phasellus condimentum nulla et sem dignissim, vel vulputate magna bibendum. Sed pretium odio at erat feugia.</p>
+         <div class="d-flex flex-column flex-md-row gap-3 align-items-center">
+            <button type="button" style="padding: 10px 50px;" class="btn btn-primary btn-lg me-md-2 rounded-0">Reply</button>
+            <button type="button" style="padding: 10px 50px;" class="btn btn-primary btn-lg me-md-2 rounded-0">Share</button>
          </div>
       </section>    
-        
-        
-
-
-
-
-
-
-
-
-
-
 
   <!-- FOOTER -->
   <footer class="bg-light text-secondary">
     <div class="container py-3">
       <div class="d-flex justify-content-between align-items-center">
-        <div>
           <a href="index.html">
             <img src="images/craigslist-logo.png" alt="Logo" width="40" height="40">
           </a>
-        </div>
         <ul class="list-inline">
           <li class="list-inline-item">HELP</li>
           <li class="list-inline-item">TERMS</a></li>
@@ -139,11 +121,9 @@
     </div>
   </footer>
 
-
-
-   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
- 
-
+  <!-- GLIDE.JS SCRIPT MODULE -->
+  <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+  <!-- GLIDE DEFINE CUSTOMIZATION -->
   <script>
   // g1 
   const gl1 = new Glide('#g1', {

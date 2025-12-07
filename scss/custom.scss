@@ -1,5 +1,4 @@
 // Custom.scss
-// Custom changes here
 
 // import fonts here
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
@@ -8,6 +7,10 @@
 
 // icons import
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+// hover import
+@import "../node_modules/hover.css/css/hover-min.css";
+
 
 
 // body bg
@@ -48,17 +51,10 @@ $font-family-serif: "Merriweather", serif;
     font-family: $font-family-serif;
 }
 
-.glide__slides {
-    margin: 0;
-    padding: 0;
+
+.btn.hvr-wobble-vertical:hover {
+    background-color: $light;
 }
-
-
-
-
-
-
-
 
 
 

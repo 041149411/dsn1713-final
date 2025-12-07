@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>dsn1713-final</title>
   <link rel="stylesheet" href="css/custom.css">
-  <!-- Glide.js stylesheets-->
+  <!-- INSERTING GLIDE.JS STYLESHEETS -->
   <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
   <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
-  <!--Inserting favicon-->
+  <!-- INSERTING FAVICON -->
   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
-<!--NAV BAR-->
+<!-- NAV BAR -->
 <body class="bg-light">
   <header class="sticky-top">
     <nav class="navbar navbar-light bg-light navbar-expand-lg">
@@ -21,7 +21,7 @@
           <img src="images/craigslist-logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
         </a>
         <form class="d-flex" role="search">
-          <input class="form-control me-2 bg-secondary rounded-0" type="search" placeholder="Search Here!" aria-label="Search"/>
+          <input class="form-control me-2 bg-secondary text-light rounded-0" type="search" placeholder="Search Here!" aria-label="Search"/>
           <button class="btn bg-primary text-light rounded-0" type="submit">Search</button>
         </form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,13 +43,9 @@
     </nav>
   </header>
 
-
-
-
   <main class="container my-5">
     <div class="row">
-  
-    <!-- SIDEBAR -->
+      <!-- SIDEBAR -->
       <div class="col-md-2 col-lg-2 bg-success p-2 pb-5 d-none d-md-block">
         <h5 class="fw-bold mb-3">Categories</h5>
         <select class="form-select mb-3">
@@ -61,7 +57,6 @@
           <option>For Sale</option>
           <option>Discussion Forum</option>
         </select>
-
         <h5 class="fw-bold mb-3">Nearby</h5>
         <select class="form-select mb-4">
           <option selected>Nearby</option>
@@ -70,7 +65,6 @@
           <option>Kingston</option>
           <option>Barrie</option>
         </select>
-
         <div class="mb-4">
           <img src="images/calendar.png" class="img-fluid" alt="Calendar" width="200" height="40">
         </div>
@@ -79,27 +73,27 @@
         </div>
       </div>
 
-      <!-- HERO/MAIN SECTION -->
+      <!-- HERO / MAIN SECTION -->
       <section id="hero" class="col-md-10">
-        <div class="container px-1 py-2">
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="container px-0 py-2">
+          <div class="row flex-lg-row-reverse align-items-center">
             <div class="col-lg-6">
               <img src="images/craigslist-header.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
             </div>
             <div class="col-lg-6">
-              <p class="lead fs-6 mb-">WELCOME TO CRAIGSLIST</p>
-              <h1 class="mb-3 fw-bold text-primary">Post and discover local deals</h1>
+              <p class="lead fs-6 mb-1">WELCOME TO CRAIGSLIST</p>
+              <h1 class="mb-1 fw-bold text-primary">Post and discover local deals</h1>
               <p class="lead fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacus dui, dapibus in odio vel, tincidunt efficitur lacus. Aliquam vitae sem sed quam faucibus tincidunt vel eget tellus. Ut pulvinar a ex a condimentum. Nam est quam, sollicitudin tempor congue eu, convallis at nisi. </p>
               <div class="d-flex gap-2 d-md-flex justify-content-md-start">
                 <button type="button" class="btn btn-primary btn-lg me-md-2 rounded-0">Post your ad</button>
-                <a href="categories.html" class="btn btn-outline-secondary btn-lg me-md-2 rounded-0 text-dark">View Posts</a>
+                <a href="categories.html" class="btn btn-outline-secondary btn-lg me-md-2 rounded-0 text-dark hvr-wobble-vertical">View posts</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- FOR YOU SECTION -->
-        <h2 class="mb-3 fw-bold text-primary">FOR YOU</h2>
+        <!-- FOR YOU SECTION / FIRST SLIDER -->
+        <h2 class="fw-bold text-primary mt-4">FOR YOU</h2>
         <div id="g1" class="glide">
           <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides mb-5">
@@ -108,6 +102,7 @@
               <li class="glide__slide"><img src="images/hp-bike-helmet.jpg" class="img-fluid"></li>
             </ul>
           </div>
+          <!-- SLIDER BULLETS -->
           <div class="glide__bullets mt-5" data-glide-el="controls[nav]">
             <button class="glide__bullet bg-secondary" data-glide-dir="=0"></button>
             <button class="glide__bullet bg-secondary" data-glide-dir="=1"></button>
@@ -115,13 +110,7 @@
           </div>
         </div>
           
-        
-      
-
-
-
-
-        <!-- WHAT'S NEW SECTION/Second Slider -->
+        <!-- WHAT'S NEW SECTION / SECOND SLIDER -->
         <h2 class="mb-3 fw-bold text-primary">WHAT'S NEW</h2>
         <div id="g2" class="glide">
           <div class="glide__track" data-glide-el="track">
@@ -131,6 +120,7 @@
               <li class="glide__slide"><img src="images/hp-stamps.jpg" class="img-fluid"></li>
             </ul>
           </div>
+          <!-- SLIDER BULLETS -->
           <div class="glide__bullets mt-5" data-glide-el="controls[nav]">
             <button class="glide__bullet bg-secondary" data-glide-dir="=0"></button>
             <button class="glide__bullet bg-secondary" data-glide-dir="=1"></button>
@@ -139,63 +129,43 @@
         </div>
 
         <!-- ACTIVE CATEGORIES SECTION -->
-        
-        <section id="cards" class="py-5">
-        <div class="container">
-          <h2 class="mb-3 fw-bold text-primary">ACTIVE CATEGORIES</h2>
-          <div class="row gy-4">
-            <div class="col-sm">
-              <div class="card text-bg-light border-0">
-                <img src="images/hp-bike.jpg" class="card-img-top rounded-0" alt="...">
-                <div class="card-body d-flex flex-column">
-                  <p class="lead fs-6">Description of post here.</p>
-                  <a href="#" class="btn btn-primary rounded-0 py-2 px-3 px-md-5 mx-auto">See post</a>
+        <section id="cards" class="py-6">
+          <div class="container px-0 py-2">
+            <h2 class="mb-3 fw-bold text-primary">ACTIVE CATEGORIES</h2>
+            <div class="row gy-4">
+              <!-- CARD 1 -->
+              <div class="col-sm">
+                <div class="card text-bg-light border-0">
+                  <img src="images/hp-bike.jpg" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body d-flex flex-column">
+                    <p class="lead fs-6">Description of post here.</p>
+                    <a href="#" class="btn btn-primary rounded-0 py-2 px-3 px-md-5 mx-auto">See post</a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div class="col-sm">
-              <div class="card text-bg-light border-0">
-                <img src="images/hp-house.jpg" class="card-img-top rounded-0" alt="...">
-                <div class="card-body d-flex flex-column">
-                  <p class="lead fs-6">Description of post here.</p>
-                  <a href="#" class="btn btn-primary rounded-0 py-2 px-3 px-md-5 mx-auto">See post</a>
+              <!-- CARD 2 -->
+              <div class="col-sm">
+                <div class="card text-bg-light border-0">
+                  <img src="images/hp-house.jpg" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body d-flex flex-column">
+                    <p class="lead fs-6">Description of post here.</p>
+                    <a href="#" class="btn btn-primary rounded-0 py-2 px-3 px-md-5 mx-auto">See post</a>
+                  </div>
                 </div>
               </div>
-            </div>
-
-             <div class="col-sm">
-              <div class="card text-bg-light border-0">
-                <img src="images/hp-toy-trucks.jpg" class="card-img-top rounded-0" alt="...">
-                <div class="card-body d-flex flex-column">
-                  <p class="lead fs-6">Description of post here.</p>
-                  <a href="#" class="btn btn-primary rounded-0 py-2 px-3 px-md-5 mx-auto">See post</a>
+              <!-- CARD 3 -->
+              <div class="col-sm">
+                <div class="card text-bg-light border-0">
+                  <img src="images/hp-toy-trucks.jpg" class="card-img-top rounded-0" alt="...">
+                  <div class="card-body d-flex flex-column">
+                    <p class="lead fs-6">Description of post here.</p>
+                    <a href="#" class="btn btn-primary rounded-0 py-2 px-3 px-md-5 mx-auto">See post</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
         </section>
-
-       
-      
-        
-    
-        
-         
-
-
-
-
-
-         
-            
-
-
-
-
-
-
       </section>
     </div>
   </main>
@@ -204,11 +174,9 @@
   <footer class="bg-light text-secondary">
     <div class="container py-3">
       <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <a href="#">
-            <img src="images/craigslist-logo.png" alt="Logo" width="40" height="40">
-          </a>
-        </div>
+        <a href="#">
+          <img src="images/craigslist-logo.png" alt="Logo" width="40" height="40">
+        </a>
         <ul class="list-inline">
           <li class="list-inline-item">HELP</li>
           <li class="list-inline-item">TERMS</a></li>
@@ -217,45 +185,37 @@
     </div>
   </footer>
 
-
-
+  <!-- GLIDE.JS SCRIPT MODULE -->
   <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
-
-
+  <!-- GLIDE DEFINE CUSTOMIZATION -->
   <script>
-  // g1 
-  const gl1 = new Glide('#g1', {
-    type: "carousel",
-    perView: 3,
-    breakpoints: {
-      500: { perView: 2 }
-    }
-  });
-
-  gl1.mount();
-
-  // g2
-  const gl2 = new Glide('#g2', {
-    type: "carousel",
-    perView: 3,
-    gap: 10,    
-    breakpoints: {
-      500: {
-        perView: 2,
-        gap: 10,
+    // g1 
+    const gl1 = new Glide('#g1', {
+      type: "carousel",
+      perView: 3,
+      breakpoints: {
+        500: { perView: 2 }
       }
-    }
-  });
+    });
 
-  gl2.mount();
-</script>
+    gl1.mount();
 
+    // g2
+    const gl2 = new Glide('#g2', {
+      type: "carousel",
+      perView: 3,
+      gap: 10,    
+      breakpoints: {
+        500: {
+          perView: 2,
+          gap: 10,
+        }
+      }
+    });
 
-
-
-
-
-
+    gl2.mount();
+  </script>
+  <!-- BOOTSTRAP CLOSING SCRIPT -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
